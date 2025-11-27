@@ -17,7 +17,8 @@ export default function GastroSection() {
           </h2>
 
           <p className="text-gray-600">
-            Through research & scientific studies, we created a breakthrough formula …
+            Through rigorous scientific studies and consultations with veterinarians, we have created a breakthrough formula exclusively tailored to combat the health challenges prevalent in dogs. A staggering 91% of our customers have reported significant improvements in their dogs' health after incorporating our product into their diet.
+
           </p>
         </div>
       </div>

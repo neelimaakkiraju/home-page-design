@@ -30,16 +30,17 @@ export default function HeaderSection() {
   ];
 
   return (
-    <div className="w-full bg-white py-16 px-6">
+    <div className="w-full bg-white py-16 px-4">
       {/* Heading */}
-      <h2 className="text-center text-3xl md:text-4xl font-extrabold leading-tight">
-        What makes us different <br /> makes them stronger
+      <h2 className="text-center text-2xl md:text-4xl font-extrabold leading-tight mb-2">
+        What makes us different
+        <br />
+        <span className="font-normal">makes them stronger</span>
       </h2>
-
-      {/* FEATURES + IMAGE */}
-      <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+      {/* Features and Image */}
+      <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
         {/* Left Features */}
-        <div className="flex flex-col justify-center gap-10">
+        <div className="flex flex-col gap-8">
           {features.slice(0, 2).map((f) => (
             <div key={f.title} className="flex gap-4 items-start">
               <div className={`${f.bg} p-4 rounded-full text-gray-800`}>
@@ -52,18 +53,16 @@ export default function HeaderSection() {
             </div>
           ))}
         </div>
-
         {/* Center Image */}
         <div className="flex justify-center">
           <img
             src="/images/dry-food.png"
             alt="Dog Food"
-            className="w-72 md:w-96 rounded-full"
+            className="w-52 h-52 rounded-full object-cover border-4 border-orange-200 shadow-lg"
           />
         </div>
-
         {/* Right Features */}
-        <div className="flex flex-col justify-center gap-10">
+        <div className="flex flex-col gap-8">
           {features.slice(2).map((f) => (
             <div key={f.title} className="flex gap-4 items-start">
               <div className={`${f.bg} p-4 rounded-full text-gray-800`}>
@@ -77,17 +76,13 @@ export default function HeaderSection() {
           ))}
         </div>
       </div>
-
-      {/* CTA BUTTON */}
-      <div className="text-center mt-14">
-        <button className="bg-orange-500 hover:bg-orange-600 text-white px-10 py-3 rounded-full text-lg font-medium transition">
+      {/* CTA Button */}
+      <div className="flex flex-col items-center mt-10">
+        <button className="bg-orange-400 hover:bg-orange-500 transition text-white px-8 py-3 rounded-md font-semibold shadow">
           Get your dog's healthy meal today!
         </button>
-
-        {/* PAYMENT ICONS */}
         <div className="flex items-center justify-center gap-3 mt-4 text-gray-700 text-sm">
           <span>🔒 30-day money back guarantee</span>
-
           <img
             src="/images/paypal.png"
             alt="PayPal"
