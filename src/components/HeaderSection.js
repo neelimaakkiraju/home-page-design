@@ -58,7 +58,7 @@ export default function HeaderSection() {
           <img
             src="/images/dry-food.png"
             alt="Dog Food"
-            className="w-52 h-52 rounded-full object-cover border-4 border-orange-200 shadow-lg"
+            className="w-[300px] h-[300px] rounded-full object-cover"
           />
         </div>
         {/* Right Features */}
