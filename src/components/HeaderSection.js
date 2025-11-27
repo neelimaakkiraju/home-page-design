@@ -32,10 +32,10 @@ export default function HeaderSection() {
   return (
     <div className="w-full bg-white py-16 px-4">
       {/* Heading */}
-      <h2 className="text-center text-2xl md:text-4xl font-extrabold leading-tight mb-2">
+      <h2 className="text-center xl:text-2xl md:text-4xl leading-tight mb-2 font-semibold">
         What makes us different
         <br />
-        <span className="font-normal">makes them stronger</span>
+        <span className="font-semibold">makes them stronger</span>
       </h2>
       {/* Features and Image */}
       <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
@@ -78,7 +78,7 @@ export default function HeaderSection() {
       </div>
       {/* CTA Button */}
       <div className="flex flex-col items-center mt-10">
-        <button className="bg-orange-400 hover:bg-orange-500 transition text-white px-8 py-3 rounded-md font-semibold shadow">
+        <button className="bg-[#EE6F4B] px-28 py-2 rounded-md font-semibold shadow text-xs text-white">
           Get your dog's healthy meal today!
         </button>
         <div className="flex items-center justify-center gap-3 mt-4 text-gray-700 text-sm">
